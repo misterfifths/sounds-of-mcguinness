@@ -3,7 +3,7 @@
 //  NoiseRecorder
 //
 //  Created by Timothy Clem on 5/11/17.
-//  Copyright © 2017 Mr. Fifths Heavy Industries. All rights reserved.
+//  Under the MIT license; see LICENSE in the root of the repository
 //
 
 #import <UIKit/UIKit.h>
