@@ -2,7 +2,7 @@
 
 ![May 16 - 21](analyze/graphs/all-together.png)
 
-[Listen](https://soundcloud.com/tim-clem-404086192/sounds-of-mcguinness)
+You can also [listen](https://soundcloud.com/tim-clem-404086192/sounds-of-mcguinness).
 
 
 ### What's this then?
