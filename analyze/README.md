@@ -2,7 +2,7 @@
 
 This directory contains a bunch of Python scripts for analyzing and visualizing the sound files captured in the [iOS app](../NoiseRecorder).
 
-# Requirements
+### Requirements
 
 - Python 2.7
 - Probably only works on OSX; didn't try elsewhere
