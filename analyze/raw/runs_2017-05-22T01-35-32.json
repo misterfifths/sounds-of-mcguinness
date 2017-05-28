@@ -1,0 +1,1 @@
+{"minimum_run_duration": 100.0, "runs": [{"duration": 104, "start": 4553264, "peak": 73.13512491488473, "tags": []}, {"duration": 350, "start": 5974650, "peak": 78.45956117206438, "tags": []}, {"duration": 515, "start": 6930982, "peak": 72.67241136510651, "tags": []}], "_current_run": null, "maximum_gap_between_runs": 500.0}
