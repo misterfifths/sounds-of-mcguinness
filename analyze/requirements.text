@@ -3,4 +3,4 @@ aubio==0.4.5
 matplotlib==2.0.1
 numpy==1.12.1
 PyAudio==0.2.11
-
+readchar==0.7
