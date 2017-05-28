@@ -37,7 +37,6 @@ def make_supercut(basename):
 
     runs.runs = filtered_runs
 
-    # runs.runs = filter(lambda r: r.peak >= peak_min, runs.runs)
     runs.pad_runs(run_padding, run_padding, len(audio))
 
     supercut = None
