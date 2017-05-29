@@ -40,7 +40,7 @@ In 2014, as part of a citywide traffic fatality reduction program, the speed lim
 
 #### NYC
 
-Now that we understand a bit about measuring sound, let's turn to the lawbooks. NYC's rules are a little bit complicated. They're laid out in the [Administrative Code, Title 24, Subchapter 6, Secion 236](http://library.amlegal.com/nxt/gateway.dll/New%20York/admin/title24environmentalprotectionandutiliti/chapter2noisecontrol?f=templates$fn=default.htm$3.0$vid=amlegal:newyork_ny$anc=JD_24-236). Quite the mouthful, eh? If you follow the chain from subsection e, you find that the actual decibel limits are laid out "section 386 of the vehicle and traffic law."
+Now that we understand a bit about measuring sound, let's turn to the lawbooks. NYC's rules are a little bit complicated. They're laid out in the [Administrative Code, Title 24, Subchapter 6, Section 236](http://library.amlegal.com/nxt/gateway.dll/New%20York/admin/title24environmentalprotectionandutiliti/chapter2noisecontrol?f=templates$fn=default.htm$3.0$vid=amlegal:newyork_ny$anc=JD_24-236). Quite the mouthful, eh? If you follow the chain from subsection e, you find that the actual decibel limits are laid out "section 386 of the vehicle and traffic law."
 
 Below, I've collated what [VAT § 386, tables 1, 2 & 3](http://nyscriminallaws.com/vt/article10.htm#t386) have to say in one table. These measurements are to be collected at 50 feet from the center of the front of the vehicle.
 
@@ -52,7 +52,7 @@ Below, I've collated what [VAT § 386, tables 1, 2 & 3](http://nyscriminallaws.c
 
 Interestingly, [as of 1998](http://www.nonoise.org/lawlib/cities/newyork.htm#232) (and probably later), the limit on the "Other" category was 70 dBA. NYC actually **raised** the limit for cars at some point in recent history. WTF?
 
-One other salient bit of the code is this: on roads with a speed limit of 35 MPH or less, the use of [compression brakes](https://www.youtube.com/watch?v=kc9-hYFQR3I&feature=youtu.be&t=86) (aka jake brakes) is illegal except in emergencies ([NYC AC § 24-236(d)(2)](http://library.amlegal.com/nxt/gateway.dll/New%20York/admin/title24environmentalprotectionandutiliti/chapter2noisecontrol?f=templates$fn=default.htm$3.0$vid=amlegal:newyork_ny$anc=JD_24-236)). I counted at least 58 uses of a jake brake in my 6 recording session (see runs tagged "jake brake" in the [raw data](analyze/raw)).
+One other salient bit of the code is this: on roads with a speed limit of 35 MPH or less, the use of [compression brakes](https://www.youtube.com/watch?v=kc9-hYFQR3I&feature=youtu.be&t=86) (aka jake brakes) is illegal except in emergencies ([NYC AC § 24-236(d)(2)](http://library.amlegal.com/nxt/gateway.dll/New%20York/admin/title24environmentalprotectionandutiliti/chapter2noisecontrol?f=templates$fn=default.htm$3.0$vid=amlegal:newyork_ny$anc=JD_24-236)). I counted at least 58 uses of a jake brake in my 6-day recording session (see runs tagged "jake brake" in the [raw data](analyze/raw)).
 
 #### WHO
 
