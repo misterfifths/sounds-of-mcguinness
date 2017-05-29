@@ -40,7 +40,7 @@ In 2014, as part of a citywide traffic fatality reduction program, the speed lim
 
 #### NYC
 
-Now that we understand a bit about measuring sound, let's turn to the lawbooks. NYC's rules are a little bit complicated. They're laid out in the [Administrative Code, Title 24, Subchapter 6, Section 236](http://library.amlegal.com/nxt/gateway.dll/New%20York/admin/title24environmentalprotectionandutiliti/chapter2noisecontrol?f=templates$fn=default.htm$3.0$vid=amlegal:newyork_ny$anc=JD_24-236). Quite the mouthful, eh? If you follow the chain from subsection e, you find that the actual decibel limits are laid out "section 386 of the vehicle and traffic law."
+Now that we understand a bit about measuring sound, let's turn to the lawbooks. NYC's rules are a little bit complicated. They're the purview of the Department of Environmental Protection, and laid out in the [Administrative Code, Title 24, Subchapter 6, Section 236](http://library.amlegal.com/nxt/gateway.dll/New%20York/admin/title24environmentalprotectionandutiliti/chapter2noisecontrol?f=templates$fn=default.htm$3.0$vid=amlegal:newyork_ny$anc=JD_24-236). If you follow the chain from subsection e, you find that the actual decibel limits are in "section 386 of the vehicle and traffic law."
 
 Below, I've collated what [VAT § 386, tables 1, 2 & 3](http://nyscriminallaws.com/vt/article10.htm#t386) have to say in one table. These measurements are to be collected at 50 feet from the center of the front of the vehicle.
 
@@ -54,10 +54,12 @@ Interestingly, [as of 1998](http://www.nonoise.org/lawlib/cities/newyork.htm#232
 
 One other salient bit of the code is this: on roads with a speed limit of 35 MPH or less, the use of [compression brakes](https://www.youtube.com/watch?v=kc9-hYFQR3I&feature=youtu.be&t=86) (aka jake brakes) is illegal except in emergencies ([NYC AC § 24-236(d)(2)](http://library.amlegal.com/nxt/gateway.dll/New%20York/admin/title24environmentalprotectionandutiliti/chapter2noisecontrol?f=templates$fn=default.htm$3.0$vid=amlegal:newyork_ny$anc=JD_24-236)). I counted at least 58 uses of a jake brake in my 6-day recording session (see runs tagged "jake brake" in the [raw data](analyze/raw)).
 
+
 #### WHO
 
 For reference, I thought it would be interesting to track down other recommendations on sound limits. The World Health Organization published the [Night Noise Guidelines for Europe](http://www.euro.who.int/__data/assets/pdf_file/0017/43316/E92845.pdf) in 2009. They suggest that "[i]f negative effects on sleep are to be avoided the equivalent sound pressure
 level should not exceed 30 dBA indoors for continuous noise."
+
 
 ### Setup
 
