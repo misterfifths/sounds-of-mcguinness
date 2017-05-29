@@ -34,6 +34,8 @@ The road is [infamous for reckless driving](http://gothamist.com/2010/04/26/afte
 
 ### dB, dBFS, dB SPL, dBA, and you
 
+#### Meet the decibels
+
 Before turning to the legal limits on sound, let's talk about volume. Measuring loudness turns out to be complicated. You're probably thinking "it's just decibels – that doesn't sound so hard." Right and wrong.
 
 [Wikipedia says](https://en.wikipedia.org/wiki/Decibel) that a decibel (dB) is "a logarithmic unit used to express the ratio of two values", one of which is some "standard reference value". There's the rub. Decibels, with no other qualification, are kind of a nonsense unit. You must describe to what they are relative, or the value has no meaning. When people talk about decibels in sound, they're usually talking about one of dBFS, dB SPL, or a weighted value like dBA.
@@ -42,9 +44,17 @@ dbFS is relative to "full scale" - the loudest sound the hardware supports befor
 
 dB SPL is a measure of "sound pressure level." [Quoth Wikipedia](https://en.wikipedia.org/wiki/Sound_pressure#Sound_pressure_level), it's relative to 20 μPa, the threshold of human hearing. The result is a sensible unit, where everyone (mostly) agrees on the reference.
 
-Finally, there's dBA. This is a weighted dB SPL, adjusted to account for human hearing such that equal dBA is roughly equal loudness. We perceive certain pitches more than others, meaning equal dB SPL is not necessarily equal *perceived* volume. Most measurements dealing with human perception of volume are in dBA. The "A" is for [A-weighting](https://en.wikipedia.org/wiki/A-weighting).
+Finally, there's dBA. We perceive certain frequencies more or less than others, meaning sounds with equal dB SPL may not *seem* to be equal in volume. dBA attempts to correct that weirdness by emphasizing certain frequencies over others. The result is that sounds with equal dBA are roughly equal in loudness to the human ear. Most things dealing with human perception of volume use dBA. The "A" is for [A-weighting](https://en.wikipedia.org/wiki/A-weighting).
 
 On top of the decibel confusion, there's distance to consider. Obviously, as you move farther away from a sound source, it becomes less loud. This fact makes a lot of those ["volume of common sounds" tables](https://www.nidcd.nih.gov/health/i-love-what-i-hear-common-sounds) largely meaningless unless they include the distance at which the measurement was taken.
+
+#### Measurement
+
+So, how do you actually measure dBA? It's a two-step process: take a dB SPL measurement using a calibrated microphone, and then use software to apply A-weighting.
+
+Calibrated microphones are engineered to have a precise conversion between their dBFS and dB SPL. To slightly simplify matters, for calibrated microphones, there's some magic constant you can add to convert from one to the other.
+
+After all that work, the good news is that applying A-weighting is pretty trivial with most sound-processing libraries.
 
 
 ### The law and other concerns
@@ -77,8 +87,52 @@ For reference, I thought it would be interesting to track down other recommendat
 level should not exceed 30 dBA indoors for continuous noise."
 
 
-### Setup
+### Process
+
+#### Recording
+
+I purchased a [Dayton Audio iMM-6 microphone](daytonaudio.com/index.php/imm-6-idevice-calibrated-measurement-microphone.html). This is a fairly affordable calibrated microphone designed to work with iOS and Android devices via the three-ring headphone jack (TRRS).
+
+As I mentioned in the [section above](#measurement), calibrated microphones have some precise conversion between dBFS and dB SPL. Unfortunately, that's not the sort of information most consumers care about, and isn't easily obtained. I did some non-scientific calibration tests using the app suggested by Dayton Audio and found that adding 93.5 to the dBFS got me fairly accurate dB SPL. I discuss this issue more in the [Caveats](#caveats) section below.
+
+I mounted the iMM-6 outside a window facing the street and used an extension cable to connect the microphone to my iPad Air 2.
+
+On the iPad, I used a [custom app](NoiseRecorder) to capture audio in 2-hour segments. The app hosts a file server, so I could periodically remove the files from the device to save space and incrementally process the data.
+
+#### Processing
+
+Once I had my audio files, I wrote [a bunch of Python scripts](analyze) to analyze them. I used a few great libraries for processing audio, [aubio](https://aubio.org) and [Pydub](http://pydub.com/). I also learned a lot from fiddling with [Librosa](http://librosa.github.io/), and [NumPy](https://docs.scipy.org/doc/numpy/reference/index.html) was super handy.
+
+The general flow for processing data is this:
+
+1. Apply A-weighting using aubio
+2. Using Pydub, find patches of loud audio and collect statistics (mean and peak volume over short intervals)
+3. Manually tag loud patches. I did this to clean up the output, which frequently contained wind blowing into the microphone (see [Caveats](#caveats)).
+4. Graph the statistics using [Matplotlib](http://matplotlib.org/)
+5. Make a horrendous supercut of the loud audio segments using Pydub.
+
+You can see more details and read the scripts [here](analyze).
 
 
-### Processing
+### Results
 
+#### Caveats
+
+- **Vehicle types.** I have no way of knowing precisely what type of vehicle is making what sound. This means I can't say with any certainty that a law is being broken (except when it exceeds the truck maximum, of course). A lot of times it's obvious that a given sound is a truck or motorcycle, but I've made no attempt to categorize them.
+- **Distance.** My microphone is roughly 50 feet from the center of the nearest lane of traffic. However, McGuinness Boulevard is 4 lanes wide with a median. So, I have no way of knowing the actual dBA of any vehicle at 50 ft., which is what the law mandates. I would need 4 properly positioned microphones, one per lane, to do this.
+- **Calibration.** There's a lot of secrecy in how microphone calibration works. The proper dBFS to dB SPL conversion is shrouded in mystery and influenced by the recording hardware's response curves and the phase of the moon. It's a mystery to me how Dayton Audio's recommended app does what it does, and no one feels like sharing. So my calibration is a rough estimate.
+- **Ambient noise.** The iMM-6 is an omnidirectional microphone, meaning it picks up all sounds in a sphere around it. This means it's subject to ambient noise. Proper measurement of traffic noise would probably need to use a directed microphone that picks up the sound coming from a tighter area around the vehicle in question.
+- **Wind.** The iMM-6 is not really intended for long-term outdoor recording. I picked up a fair amount of wind blowing into the microphone, which I tagged and filtered out of the supercut.
+- **Emergency vehicles.** I couldn't find any mention of emergency vehicles in the law. I've included them in the supercut, because they are typically accompanied by a lot of horn-honking.
+
+#### Findings
+
+You can check out the [graphs](analyze/graphs) and [audio supercut](https://soundcloud.com/tim-clem-404086192/sounds-of-mcguinness).
+
+A few things stood out to me:
+
+- **Peaks.** There are a hell of a lot of really loud (and potentially illegal) noises. And if the old limit of 70 dBA for cars was still in place, there would be way more.
+- **Jake brakes.** I counted 58 uses of a "jake brake", which are [illegal except in emergencies](#NYC).
+- **Horns.** Surprisingly few sounds >76 dBA were from horns. Anecdotally I can say that I don't notice much horn-blowing on the road.
+- **Rush hour.** I expected rush hours to be a more obvious bump on the graph, but more than anything, days are broken up into daytime and nighttime.
+- **Weekends.** I had anecdotally noticed the road is quieter on weekends, and the data agree. Also interesting that volume reaches its peak around 6AM on weekdays, but not until 10AM or so on weekends. People sleep in.
