@@ -52,7 +52,7 @@ On top of the decibel confusion, there's distance to consider. Obviously, as you
 
 So, how do you actually measure dBA? It's a two-step process: take a dB SPL measurement using a calibrated microphone, and then use software to apply A-weighting to your recording.
 
-Calibrated microphones are engineered to have a precise conversion between their dBFS and dB SPL. To slightly simplify matters, for calibrated microphones, there's some magic constant you can add to convert from one to the other.
+Calibrated microphones are engineered to have a precise conversion between their dBFS and dB SPL. To oversimplify, it's roughly the case that there's some magic constant you can add to convert from one to the other.
 
 After all that work, the good news is that applying A-weighting is pretty trivial with most sound-processing libraries.
 
@@ -73,7 +73,7 @@ Below, I've collated [VAT § 386, tables 1, 2 & 3](http://nyscriminallaws.com/vt
 
 Interestingly, [as of 1998](http://www.nonoise.org/lawlib/cities/newyork.htm#232) (and probably later), the limit on the "Other" category was 70 dBA. NYC actually **raised** the limit for cars at some point in recent history.
 
-One other salient bit of the code is this: on roads with a speed limit of 35 MPH or less, the use of [compression brakes](https://www.youtube.com/watch?v=kc9-hYFQR3I&feature=youtu.be&t=86) (aka jake brakes) is illegal except in emergencies ([NYC AC § 24-236(d)(2)](http://library.amlegal.com/nxt/gateway.dll/New%20York/admin/title24environmentalprotectionandutiliti/chapter2noisecontrol?f=templates$fn=default.htm$3.0$vid=amlegal:newyork_ny$anc=JD_24-236)). I counted 58 uses of a jake brake over 70 dBA in my 6-day recording session (see runs tagged "jake brake" in the [raw data](analyze/raw)).
+One other salient bit of the code is this: on roads with a speed limit of 35 MPH or less, the use of [compression brakes](https://www.youtube.com/watch?v=kc9-hYFQR3I&feature=youtu.be&t=86) (aka engine or jake brakes) is illegal except in emergencies ([NYC AC § 24-236(d)(2)](http://library.amlegal.com/nxt/gateway.dll/New%20York/admin/title24environmentalprotectionandutiliti/chapter2noisecontrol?f=templates$fn=default.htm$3.0$vid=amlegal:newyork_ny$anc=JD_24-236)). I counted 58 uses of a jake brake over 70 dBA in my 6-day recording session (see runs tagged "jake brake" in the [raw data](analyze/raw)).
 
 #### Enforcement
 
@@ -133,6 +133,6 @@ A few things stood out to me:
 
 - **Peaks.** There are a hell of a lot of really loud (and potentially illegal) noises. And if the old limit of 70 dBA for cars was still in place, there would be way more.
 - **Jake brakes.** I counted 58 uses of a "jake brake", which are [illegal except in emergencies](#nyc).
-- **Horns.** Surprisingly few sounds >76 dBA were from horns. Anecdotally I can say that I don't notice much horn-blowing on the road.
+- **Horns.** Surprisingly few sounds ≥76 dBA were from horns. Anecdotally, I don't hear much horn-blowing on the road.
 - **Rush hour.** I expected rush hours to be a more obvious bump on the graph, but more than anything, days are broken up solely by daytime and nighttime.
 - **Weekends.** I had anecdotally noticed the road is quieter on weekends, and the data agree. Also interesting that volume reaches its peak around 6AM on weekdays, but not until 10AM or so on weekends. People sleep in.
