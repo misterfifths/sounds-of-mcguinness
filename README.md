@@ -99,6 +99,8 @@ I mounted the iMM-6 outside a window facing the street and used an extension cab
 
 On the iPad, I used a [custom app](NoiseRecorder) to capture audio in 2-hour segments. The app hosts a file server, so I could periodically remove the files from the device to save space and incrementally process the data.
 
+![The setup](docs/images/setup.jpg)
+
 #### Processing
 
 Once I had my audio files, I wrote [a bunch of Python scripts](analyze) to analyze them. I used a few great libraries for processing audio, namely [aubio](https://aubio.org) and [Pydub](http://pydub.com/). I also learned a lot from fiddling with [Librosa](http://librosa.github.io/), and [NumPy](https://docs.scipy.org/doc/numpy/reference/index.html) was super handy.
