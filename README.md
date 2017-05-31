@@ -77,16 +77,21 @@ Interestingly, [as of 1998](http://www.nonoise.org/lawlib/cities/newyork.htm#232
 
 One other salient bit of the code is this: on roads with a speed limit of 35 MPH or less, the use of [compression brakes](https://www.youtube.com/watch?v=kc9-hYFQR3I&feature=youtu.be&t=86) (aka engine or jake brakes) is illegal except in emergencies ([NYC AC § 24-236(d)(2)](http://library.amlegal.com/nxt/gateway.dll/New%20York/admin/title24environmentalprotectionandutiliti/chapter2noisecontrol?f=templates$fn=default.htm$3.0$vid=amlegal:newyork_ny$anc=JD_24-236)). I counted 58 uses of a jake brake over 70 dBA in my 6-day recording session (see runs tagged "jake brake" in the [raw data](analyze/raw)).
 
+#### WHO
+
+For reference, I thought it would be interesting to track down other recommendations on sound limits. The World Health Organization published the [Night Noise Guidelines for Europe](http://www.euro.who.int/__data/assets/pdf_file/0017/43316/E92845.pdf) in 2009. They suggest that "[i]f negative effects on sleep are to be avoided the equivalent sound pressure level should not exceed 30 dBA indoors for continuous noise."
+
 #### Enforcement
 
 If you experience a loud vehicle, [NYC suggests you call 311](http://www1.nyc.gov/nyc-resources/faq/432/how-do-i-report-a-noisy-vehicle). From January 1, 2010 to May 28, 2017, there have been only 59 vehicular noise complaints involving McGuinness in some way (see the [311 data](https://nycopendata.socrata.com/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9)). To me, it makes sense this number is so low: calling 311 to report a passing vehicle makes no sense. In fact, the 311 database doesn't even seem to have a category for engine, brake, or general vehicle noise – just music, horns, and idling.
 
 So, how should these laws be enforced? The letter of the law would seemingly require precisely positioned microphones, one per lane, and cameras or humans to note the type of vehicle making noise. That scenario seems unlikely.
 
-#### WHO
+The noise code shares problems with many traffic laws: it's violated regularly, and only enforced if a police officer is in the right place at the right time. Traffic cameras can catch speeders and those who run red lights. Perhaps technology could help enforce noise limits as well; I lack the expertise to make a judgement about how complicated or effective that would be.
 
-For reference, I thought it would be interesting to track down other recommendations on sound limits. The World Health Organization published the [Night Noise Guidelines for Europe](http://www.euro.who.int/__data/assets/pdf_file/0017/43316/E92845.pdf) in 2009. They suggest that "[i]f negative effects on sleep are to be avoided the equivalent sound pressure
-level should not exceed 30 dBA indoors for continuous noise."
+In the meantime, periodic enforcement "pushes" might be helpful. If a small group of traffic police staked out a stretch of McGuinness and issued tickets for noise violations, it would at least raise awareness that there *are* limits and that someone is paying attention.
+
+Certainly the NYPD has bigger fish to fry. But given the number of people in the city who live along highways, and the repercussions on [sleep, heart disease, stress, child development, and more](https://en.wikipedia.org/wiki/Health_effects_from_noise), the problem at least deserves some recognition.
 
 
 ### Process
@@ -140,3 +145,8 @@ A few things stood out to me:
 - **Horns.** Surprisingly few sounds ≥76 dBA were from horns. Anecdotally, I don't hear much horn-blowing on the road.
 - **Rush hour.** I expected rush hours to be a more obvious bump on the graph, but more than anything, days are broken up solely by daytime and nighttime.
 - **Weekends.** I had anecdotally noticed the road is quieter on weekends, and the data agree. Also interesting that volume reaches its peak around 6AM on weekdays, but not until 10AM or so on weekends. People sleep in.
+
+
+#### Questions
+
+I'm curious about 
