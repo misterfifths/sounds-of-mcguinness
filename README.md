@@ -91,7 +91,7 @@ level should not exceed 30 dBA indoors for continuous noise."
 
 #### Recording
 
-I purchased a [Dayton Audio iMM-6 microphone](daytonaudio.com/index.php/imm-6-idevice-calibrated-measurement-microphone.html). This is a fairly affordable calibrated microphone designed to work with iOS and Android devices via the three-ring headphone jack (TRRS).
+I purchased a [Dayton Audio iMM-6 microphone](http://daytonaudio.com/index.php/imm-6-idevice-calibrated-measurement-microphone.html). This is a fairly affordable calibrated microphone designed to work with iOS and Android devices via the three-ring headphone jack (TRRS).
 
 As I mentioned in the [section above](#measurement), calibrated microphones have some precise conversion between dBFS and dB SPL. Unfortunately, that's not the sort of information most consumers care about, and isn't easily obtained. I did some non-scientific calibration tests using the app suggested by Dayton Audio and found that adding 93.5 to the dBFS got me fairly accurate dB SPL. I discuss this issue more in the [Caveats](#caveats) section below.
 

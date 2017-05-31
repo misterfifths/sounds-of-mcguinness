@@ -13,7 +13,7 @@ I happen to live about 50 feet from it.
 
 This project started because I wondered just how loud the road actually is. And moreover, how loud is *too* loud, both legally and psychically?
 
-So, I bought a [fancy microphone](daytonaudio.com/index.php/imm-6-idevice-calibrated-measurement-microphone.html) and recorded the thing for 6 days.
+So, I bought a [fancy microphone](http://daytonaudio.com/index.php/imm-6-idevice-calibrated-measurement-microphone.html) and recorded the thing for 6 days.
 
 ![The setup](images/setup.jpg)
 
