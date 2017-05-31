@@ -4,7 +4,9 @@
 
 [More graphs](analyze/graphs).
 
-You can also [listen](https://soundcloud.com/tim-clem-404086192/sounds-of-mcguinness).
+You can [listen](https://soundcloud.com/tim-clem-404086192/sounds-of-mcguinness).
+
+There's also a [less technical, briefer writeup](https://misterfifths.github.io/sounds-of-mcguinness).
 
 
 ### What's this then?
