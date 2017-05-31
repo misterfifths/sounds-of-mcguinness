@@ -44,9 +44,9 @@ dbFS is relative to "full scale" - the loudest sound the hardware supports befor
 
 dB SPL is a measure of "sound pressure level." [Quoth Wikipedia](https://en.wikipedia.org/wiki/Sound_pressure#Sound_pressure_level), it's relative to 20 μPa, the threshold of human hearing. The result is a sensible unit, where everyone (mostly) agrees on the reference.
 
-Finally, there's dBA. We perceive certain frequencies more or less than others, meaning sounds with equal dB SPL may not *seem* to be equal in volume. dBA attempts to correct that weirdness by emphasizing certain frequencies over others. The result is that sounds with equal dBA are roughly equal in loudness to the human ear. Most things dealing with human perception of volume use dBA. The "A" is for [A-weighting](https://en.wikipedia.org/wiki/A-weighting).
+Finally, there's dBA. Humans are more sensitive to certain frequencies, meaning sounds with equal dB SPL may not *seem* to be equal in volume. dBA attempts to correct that weirdness by emphasizing certain frequencies over others. The result is that sounds with equal dBA are roughly equal in loudness to the human ear. Most things dealing with human perception of volume (e.g., laws) use dBA. The "A" is for [A-weighting](https://en.wikipedia.org/wiki/A-weighting).
 
-On top of the decibel confusion, there's distance to consider. Obviously, as you move farther away from a sound source, it becomes less loud. This fact makes a lot of those ["volume of common sounds" tables](https://www.nidcd.nih.gov/health/i-love-what-i-hear-common-sounds) largely meaningless unless they include the distance at which the measurement was taken.
+On top of the decibel confusion, there's distance to consider. Obviously, as you move farther away from a sound source, it becomes less loud. This fact makes ["volume of common sounds" tables](https://www.nidcd.nih.gov/health/i-love-what-i-hear-common-sounds) largely meaningless unless they include the distance at which the measurement was taken.
 
 #### Measurement
 
