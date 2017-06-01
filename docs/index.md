@@ -31,7 +31,7 @@ Here are some numbers:
 ------------------------------|-------|-------|----------------------
 | ≥70 dBA (old car limit)     | 1,960 | 326.7 |  4                  |
 | ≥76 dBA (current car limit) |   440 |  73.3 | 20                  |
-| ≥82 dBA (motorocyle limit)  |    89 |  14.8 | 1 hour, 37 minutes  |
+| ≥82 dBA (motorcycle limit)  |    89 |  14.8 | 1 hour, 37 minutes  |
 | ≥86 dBA (truck limit)       |    35 |   5.8 | 4 hours, 7 minutes  |
 | "Jake brakes" ≥ 70 dBA      |    58 |   9.7 | 2 hours, 29 minutes |
 | Horns ≥ 70 dBA              |    64 |  10.7 | 2 hours, 15 minutes |
