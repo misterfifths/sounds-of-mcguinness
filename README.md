@@ -153,6 +153,6 @@ A few things stood out to me:
 
 - **Peaks.** There are a hell of a lot of really loud (and potentially illegal) noises. And if the old limit of 70 dBA for cars was still in place, there would be way more.
 - **Jake brakes.** I counted 58 uses of a "jake brake" ≥70 dBA, which are [illegal except in emergencies](#nyc). These are actually illegal at *any* volume, so there were certainly more.
-- **Horns.** Surprisingly few sounds ≥76 dBA were from horns. Anecdotally, I don't hear much horn-blowing on the road.
+- **Horns.** Surprisingly few sounds ≥70 dBA were from horns. Anecdotally, I don't hear much horn-blowing on the road.
 - **Rush hour.** I expected rush hours to be a more obvious bump on the graph, but more than anything, days are broken up solely by daytime and nighttime.
 - **Weekends.** I had anecdotally noticed the road is quieter on weekends, and the data agree. Also interesting that volume reaches its peak around 6AM on weekdays, but not until 10AM or so on weekends. People sleep in.
