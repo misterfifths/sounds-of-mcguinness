@@ -136,12 +136,23 @@ You can see more details and read the scripts [here](analyze).
 
 #### Findings
 
-You can check out the [graphs](analyze/graphs) and [audio supercut](https://soundcloud.com/tim-clem-404086192/sounds-of-mcguinness).
+You can check out the [graphs](analyze/graphs) and [audio supercut](https://soundcloud.com/tim-clem-404086192/sounds-of-mcguinness). Here are some numbers:
+
+| Condition | Incidences in 6-day period* | Daily average | Average minutes between incidences |
+------------------------------|-------|-------|----------------------
+| ≥70 dBA (old car limit)     | 1,960 | 326.7 |  4                  |
+| ≥76 dBA (current car limit) |   440 |  73.3 | 20                  |
+| ≥82 dBA (motorocyle limit)  |    89 |  14.8 | 1 hour, 37 minutes  |
+| ≥86 dBA (truck limit)       |    35 |   5.8 | 4 hours, 7 minutes  |
+| "Jake brakes" ≥ 70 dBA      |    58 |   9.7 | 2 hours, 29 minutes |
+| Horns ≥ 70 dBA              |    64 |  10.7 | 2 hours, 15 minutes |
+
+**\*** *An "incidence" in this case is any occurrence of the given sound lasting at least one-tenth of a second. Any such sounds that happen within a half second of each other are repeatedly merged into one incidence. See the [stats and runs script](analyze/stats_and_runs.py) for technical details.*
 
 A few things stood out to me:
 
 - **Peaks.** There are a hell of a lot of really loud (and potentially illegal) noises. And if the old limit of 70 dBA for cars was still in place, there would be way more.
-- **Jake brakes.** I counted 58 uses of a "jake brake", which are [illegal except in emergencies](#nyc).
+- **Jake brakes.** I counted 58 uses of a "jake brake" ≥70 dBA, which are [illegal except in emergencies](#nyc). These are actually illegal at *any* volume, so there were certainly more.
 - **Horns.** Surprisingly few sounds ≥76 dBA were from horns. Anecdotally, I don't hear much horn-blowing on the road.
 - **Rush hour.** I expected rush hours to be a more obvious bump on the graph, but more than anything, days are broken up solely by daytime and nighttime.
 - **Weekends.** I had anecdotally noticed the road is quieter on weekends, and the data agree. Also interesting that volume reaches its peak around 6AM on weekdays, but not until 10AM or so on weekends. People sleep in.

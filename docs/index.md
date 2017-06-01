@@ -25,6 +25,19 @@ And, according to the World Health Organization's recommendations, it is *almost
 
 [![May 16 - May 21, 2017](images/all-together.png)](images/all-together.png)
 
+Here are some numbers:
+
+| Condition | Incidences in 6-day period* | Daily average | Average minutes between incidences |
+------------------------------|-------|-------|----------------------
+| ≥70 dBA (old car limit)     | 1,960 | 326.7 |  4                  |
+| ≥76 dBA (current car limit) |   440 |  73.3 | 20                  |
+| ≥82 dBA (motorocyle limit)  |    89 |  14.8 | 1 hour, 37 minutes  |
+| ≥86 dBA (truck limit)       |    35 |   5.8 | 4 hours, 7 minutes  |
+| "Jake brakes" ≥ 70 dBA      |    58 |   9.7 | 2 hours, 29 minutes |
+| Horns ≥ 70 dBA              |    64 |  10.7 | 2 hours, 15 minutes |
+
+**\*** *An "incidence" in this case is any occurrence of the given sound lasting at least one-tenth of a second. Any such sounds that happen within a half second of each other are repeatedly merged into one incidence. See the [technical write-up](https://github.com/misterfifths/sounds-of-mcguinness) for more details.*
+
 ### What now?
 
 Well, here's the thing. The laws governing this stuff are effectively unenforceable without a serious investment of both equipment and personnel.
