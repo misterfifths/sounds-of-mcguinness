@@ -145,8 +145,3 @@ A few things stood out to me:
 - **Horns.** Surprisingly few sounds ≥76 dBA were from horns. Anecdotally, I don't hear much horn-blowing on the road.
 - **Rush hour.** I expected rush hours to be a more obvious bump on the graph, but more than anything, days are broken up solely by daytime and nighttime.
 - **Weekends.** I had anecdotally noticed the road is quieter on weekends, and the data agree. Also interesting that volume reaches its peak around 6AM on weekdays, but not until 10AM or so on weekends. People sleep in.
-
-
-#### Questions
-
-I'm curious about 
