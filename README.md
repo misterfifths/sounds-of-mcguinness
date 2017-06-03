@@ -89,7 +89,7 @@ So, how should these laws be enforced? The letter of the law would seemingly req
 
 The noise code shares problems with many traffic laws: it's violated regularly, and only enforced if a police officer is in the right place at the right time. Traffic cameras can catch speeders and those who run red lights. Perhaps technology could help enforce noise limits as well; I lack the expertise to make a judgement about how complicated or effective that would be.
 
-In the meantime, periodic enforcement "pushes" might be helpful. If a small group of traffic police staked out a stretch of McGuinness and issued tickets for noise violations, it would at least raise awareness that there *are* limits and that someone is paying attention.
+In the meantime, periodic enforcement "pushes" might be helpful. If a small group of traffic police staked out a stretch of McGuinness and issued tickets for noise violations, it would at least raise awareness that there *are* limits and that someone is paying attention. An even easier target than the noise code itself is the use of compression brakes (aka "jake" or "engine" brakes). These are [illegal except in emergencies](http://library.amlegal.com/nxt/gateway.dll/New%20York/admin/title24environmentalprotectionandutiliti/chapter2noisecontrol?f=templates$fn=default.htm$3.0$vid=amlegal:newyork_ny$anc=JD_24-236), yet I counted at least 58 uses in my 6-day recording session.
 
 Certainly the NYPD has bigger fish to fry. But given the number of people in the city who live along highways, and the repercussions on [sleep, heart disease, stress, child development, and more](https://en.wikipedia.org/wiki/Health_effects_from_noise), the problem at least deserves some recognition.
 
@@ -156,3 +156,17 @@ A few things stood out to me:
 - **Horns.** Surprisingly few sounds ≥70 dBA were from horns. Anecdotally, I don't hear much horn-blowing on the road.
 - **Rush hour.** I expected rush hours to be a more obvious bump on the graph, but more than anything, days are broken up solely by daytime and nighttime.
 - **Weekends.** I had anecdotally noticed the road is quieter on weekends, and the data agree. Also interesting that volume reaches its peak around 6AM on weekdays, but not until 10AM or so on weekends. People sleep in.
+
+
+### Reproducibility and awareness
+
+All the software I used is in this repository. With the purchase of a calibrated microphone and a dedicated iOS device, anyone could use these tools to generate statistics, graphs, and audio like those found on this page. However, I recognize that few people have a spare iOS device to sacrifice to the cause. It would be completely feasible to develop a self-contained monitor (perhaps even weatherproof) that citizens could place in their windowsills. Miniature computers like the [Raspberry Pi](http://raspberrypi.org/) are ideal for such uses. [Professional tools](http://www.cirrusresearch.co.uk/products/trojan2-noise-nuisance-recorder/) for such measurement exist, but are presumably blindingly expensive.
+
+[The Noise App](http://www.thenoiseapp.com/) recently launched in the UK. Using this tool, people can record noise nuisances and report them to local investigators. The app is a great step toward enforcing noise code, but much like 311, I imagine its ability to deal with traffic noise is minimal.
+
+[EU regulation](http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:JOL_2014_127_R_0003#d1e149-66-1) allows for the testing of noise levels during vehicle inspection, and [many countries](http://www.cirrusresearch.co.uk/applications/vehicle-noise/) require periodic checks. I could find no similar conditions in [New York State's vehicle inspection rules](https://dmv.ny.gov/brochure/new-york-state-vehicle-safetyemissions-inspection-program). Noise inspections could be a real path to improvement, especially if vehicles had to be measured at a realistic RPM.
+
+### Open questions
+
+- Sometime between [now](http://nyscriminallaws.com/vt/article10.htm#t386) and [1998](http://www.nonoise.org/lawlib/cities/newyork.htm#232), the noise limit for cars was increased from 70 dBA to 76 dBA. When, and for god's sake, why? 6 dBA may not sound like much, but it's almost [double the perceived volume](http://www.sengpielaudio.com/calculator-levelchange.htm).
+- Why do motorcycles receive special dispensation to be loud? Their limit is 82 dBA, almost double the perceived volume of the 76 dBA limit for cars. Is there a shadowy motorcycle lobby consisting of Hell's Angels and Harley Davidson enthusiasts?
