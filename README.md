@@ -27,14 +27,14 @@ This document describes my research and process.
 - The raw AAC files captured by the [iOS app](NoiseRecorder) are [here](https://drive.google.com/open?id=0By0v4sT5asPNNmctcjc3ZWFjVXc). They are under the [CC by-attribution 3.0 license](https://creativecommons.org/licenses/by/3.0/us/).
 
 
-### McGuinness
+## McGuinness
 
 Greenpoint's own "McGuinness Expressway" (aka the "Pulaski Raceway", aka the "Brooklyn Boulevard of Death") connects the Pulaski Bridge to the BQE. It started life as humble Oakland Street, but was widened in 1954. I can't find anything blaming the project on Robert Moses, but I'm going to assume he strongly approved.
 
 The road is [infamous for reckless driving](http://gothamist.com/2010/04/26/after_fatal_hit-and-run_mcguinness.php). Indeed, in 2014, as part of a citywide program addressing traffic fatalities, the speed limit on the road was [reduced from 30 to 25 MPH](http://gothamist.com/2014/04/23/mcguinness_boulevard_gets_slow_zone.php). I didn't test the speed of vehicles, but it's probably safe to assume [the reduction made little difference](http://gothamist.com/2014/11/08/speed_limit_mcguinness.php). After all, it's a wide, 4-lane road that connects to two major highways.
 
 
-### dB, dBFS, dB SPL, dBA, and you
+## dB, dBFS, dB SPL, dBA, and you
 
 #### Meet the decibels
 
@@ -59,7 +59,7 @@ Calibrated microphones are engineered to have a precise conversion between their
 After all that work, the good news is that applying A-weighting is pretty trivial with most sound-processing libraries.
 
 
-### The law and other concerns
+## The law and other concerns
 
 #### NYC
 
@@ -81,20 +81,8 @@ One other salient bit of the code is this: on roads with a speed limit of 35 MPH
 
 For reference, I thought it would be interesting to track down other recommendations on sound limits. The World Health Organization published the [Night Noise Guidelines for Europe](http://www.euro.who.int/__data/assets/pdf_file/0017/43316/E92845.pdf) in 2009. They suggest that "[i]f negative effects on sleep are to be avoided the equivalent sound pressure level should not exceed 30 dBA indoors for continuous noise."
 
-#### Enforcement
 
-If you experience a loud vehicle, [NYC suggests you call 311](http://www1.nyc.gov/nyc-resources/faq/432/how-do-i-report-a-noisy-vehicle). From January 1, 2010 to May 28, 2017, there have been only 59 vehicular noise complaints involving McGuinness in some way (see the [311 data](https://nycopendata.socrata.com/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9)). To me, it makes sense this number is so low: calling 311 to report a passing vehicle makes no sense. In fact, the 311 database doesn't even seem to have a category for engine, brake, or general vehicle noise – just music, horns, and idling.
-
-So, how should these laws be enforced? The letter of the law would seemingly require precisely positioned microphones, one per lane, and cameras or humans to note the type of vehicle making noise. That scenario seems unlikely.
-
-The noise code shares problems with many traffic laws: it's violated regularly, and only enforced if a police officer is in the right place at the right time. Traffic cameras can catch speeders and those who run red lights. Perhaps technology could help enforce noise limits as well; I lack the expertise to make a judgement about how complicated or effective that would be.
-
-In the meantime, periodic enforcement "pushes" might be helpful. If a small group of traffic police staked out a stretch of McGuinness and issued tickets for noise violations, it would at least raise awareness that there *are* limits and that someone is paying attention. An even easier target than the noise code itself is the use of compression brakes (aka "jake" or "engine" brakes). These are [illegal except in emergencies](http://library.amlegal.com/nxt/gateway.dll/New%20York/admin/title24environmentalprotectionandutiliti/chapter2noisecontrol?f=templates$fn=default.htm$3.0$vid=amlegal:newyork_ny$anc=JD_24-236), yet I counted at least 58 uses in my 6-day recording session.
-
-Certainly the NYPD has bigger fish to fry. But given the number of people in the city who live along highways, and the repercussions on [sleep, heart disease, stress, child development, and more](https://en.wikipedia.org/wiki/Health_effects_from_noise), the problem at least deserves some recognition.
-
-
-### Process
+## Process
 
 #### Recording
 
@@ -123,7 +111,7 @@ The general flow for processing data is this:
 You can see more details and read the scripts [here](analyze).
 
 
-### Results
+## Results
 
 #### Caveats
 
@@ -157,14 +145,31 @@ A few things stood out to me:
 - **Rush hour.** I expected rush hours to be a more obvious bump on the graph, but more than anything, days are broken up solely by daytime and nighttime.
 - **Weekends.** I had anecdotally noticed the road is quieter on weekends, and the data agree. Also interesting that volume reaches its peak around 6AM on weekdays, but not until 10AM or so on weekends. People sleep in.
 
+## What now?
 
-### Reproducibility and awareness
+So, there are a lot of potential infractions of the noise code. What's to be done?
 
-All the software I used is in this repository. With the purchase of a calibrated microphone and a dedicated iOS device, anyone could use these tools to generate statistics, graphs, and audio like those found on this page. However, I recognize that few people have a spare iOS device to sacrifice to the cause. It would be completely feasible to develop a self-contained monitor (perhaps even weatherproof) that citizens could place in their windowsills. Miniature computers like the [Raspberry Pi](http://raspberrypi.org/) are ideal for such uses. [Professional tools](http://www.cirrusresearch.co.uk/products/trojan2-noise-nuisance-recorder/) for such measurement exist, but are presumably blindingly expensive.
+If you experience a loud vehicle, [NYC suggests you call 311](http://www1.nyc.gov/nyc-resources/faq/432/how-do-i-report-a-noisy-vehicle). However, from January 1, 2010 to May 28, 2017, there have been only 59 vehicular noise complaints involving McGuinness in some way (see the [311 data](https://nycopendata.socrata.com/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9)). To me, it makes sense this number is so low: calling 311 to report a passing vehicle makes no sense. In fact, the 311 database doesn't even seem to have a category for engine, brake, or general vehicle noise – just music, horns, and idling.
+
+How should these laws be enforced? The letter of the law would seemingly require precisely positioned microphones, one per lane, and cameras or humans to note the type of vehicle making noise. That scenario seems unlikely.
+
+The noise code shares problems with many traffic laws: it's violated regularly, and only enforced if a police officer is in the right place at the right time. Traffic cameras can catch speeders and those who run red lights. Perhaps technology could help enforce noise limits as well; I lack the expertise to make a judgement about how complicated or effective that would be.
+
+### Potential solutions
+
+In the meantime, periodic enforcement "pushes" might be helpful. If a small group of traffic police staked out a stretch of McGuinness and issued tickets for noise violations, it would at least raise awareness that there *are* limits and that someone is paying attention. An even easier target than the noise code itself is the use of compression brakes (aka "jake" or "engine" brakes). These are [illegal except in emergencies](http://library.amlegal.com/nxt/gateway.dll/New%20York/admin/title24environmentalprotectionandutiliti/chapter2noisecontrol?f=templates$fn=default.htm$3.0$vid=amlegal:newyork_ny$anc=JD_24-236), yet I counted at least 58 uses in my 6-day recording session.
 
 [The Noise App](http://www.thenoiseapp.com/) recently launched in the UK. Using this tool, people can record noise nuisances and report them to local investigators. The app is a great step toward enforcing noise code, but much like 311, I imagine its ability to deal with traffic noise is minimal.
 
 [EU regulation](http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:JOL_2014_127_R_0003#d1e149-66-1) allows for the testing of noise levels during vehicle inspection, and [many countries](http://www.cirrusresearch.co.uk/applications/vehicle-noise/) require periodic checks. I could find no similar conditions in [New York State's vehicle inspection rules](https://dmv.ny.gov/brochure/new-york-state-vehicle-safetyemissions-inspection-program). Noise inspections could be a real path to improvement, especially if vehicles had to be measured at a realistic RPM.
+
+The road surface itself is an overlooked source of noise. McGuinness is [notorious for potholes](http://gothamist.com/2014/04/23/mcguinness_boulevard_gets_slow_zone.php), and trucks speeding over bumpy patched road is a recipe for sonic booms. Improvements in road maintenance could only help the situation.
+
+Certainly the NYPD and DEP have bigger fish to fry. But given the number of people in the city who live along highways, and the repercussions on [sleep, heart disease, stress, child development, and more](https://en.wikipedia.org/wiki/Health_effects_from_noise), the problem at least deserves some recognition.
+
+### Reproducibility
+
+All the software I used is in this repository. With a calibrated microphone and a dedicated iOS device, anyone could use these tools to generate statistics, graphs, and audio like those found on this page. However, I recognize that few people have a spare iOS device to sacrifice to the cause. It would be completely feasible to develop a self-contained monitor (perhaps even weatherproof) that citizens could place in their windowsills. Miniature computers like the [Raspberry Pi](http://raspberrypi.org/) are ideal for such uses. [Professional tools](http://www.cirrusresearch.co.uk/products/trojan2-noise-nuisance-recorder/) for such measurement exist, but are presumably blindingly expensive.
 
 ### Open questions
 
