@@ -36,7 +36,7 @@ The road is [infamous for reckless driving](http://gothamist.com/2010/04/26/afte
 
 ## dB, dBFS, dB SPL, dBA, and you
 
-#### Meet the decibels
+### Meet the decibels
 
 Before turning to the legal limits on volume, let's talk about sound. Measuring loudness turns out to be complicated. You're probably thinking "it's just decibels – that doesn't sound so hard." Right and wrong.
 
@@ -50,7 +50,7 @@ Finally, there's dBA. Humans are more sensitive to certain frequencies, meaning 
 
 On top of the decibel confusion, there's distance to consider. Obviously, as you move farther away from a sound source, it becomes less loud. This fact makes ["volume of common sounds" tables](https://www.nidcd.nih.gov/health/i-love-what-i-hear-common-sounds) largely meaningless unless they include the distance at which the measurement was taken.
 
-#### Measurement
+### Measurement
 
 So, how do you actually measure dBA? It's a two-step process: take a dB SPL measurement using a calibrated microphone, and then use software to apply A-weighting to your recording.
 
@@ -61,7 +61,7 @@ After all that work, the good news is that applying A-weighting is pretty trivia
 
 ## The law and other concerns
 
-#### NYC
+### NYC
 
 Now that we understand a bit about measuring sound, let's turn to the lawbooks. NYC's rules are a little bit complicated. They're the purview of the Department of Environmental Protection, and laid out in the [Administrative Code, Title 24, Subchapter 6, Section 236](http://library.amlegal.com/nxt/gateway.dll/New%20York/admin/title24environmentalprotectionandutiliti/chapter2noisecontrol?f=templates$fn=default.htm$3.0$vid=amlegal:newyork_ny$anc=JD_24-236). Subsection (e) states the actual decibel limits are in "section 386 of the vehicle and traffic law."
 
@@ -77,14 +77,14 @@ Interestingly, [as of 1998](http://www.nonoise.org/lawlib/cities/newyork.htm#232
 
 One other salient bit of the code is this: on roads with a speed limit of 35 MPH or less, the use of [compression brakes](https://www.youtube.com/watch?v=kc9-hYFQR3I&feature=youtu.be&t=86) (aka engine or jake brakes) is illegal except in emergencies ([NYC AC § 24-236(d)(2)](http://library.amlegal.com/nxt/gateway.dll/New%20York/admin/title24environmentalprotectionandutiliti/chapter2noisecontrol?f=templates$fn=default.htm$3.0$vid=amlegal:newyork_ny$anc=JD_24-236)). I counted 58 uses of a jake brake over 70 dBA in my 6-day recording session (see runs tagged "jake brake" in the [raw data](analyze/raw)).
 
-#### WHO
+### WHO
 
 For reference, I thought it would be interesting to track down other recommendations on sound limits. The World Health Organization published the [Night Noise Guidelines for Europe](http://www.euro.who.int/__data/assets/pdf_file/0017/43316/E92845.pdf) in 2009. They suggest that "[i]f negative effects on sleep are to be avoided the equivalent sound pressure level should not exceed 30 dBA indoors for continuous noise."
 
 
 ## Process
 
-#### Recording
+### Recording
 
 I purchased a [Dayton Audio iMM-6 microphone](http://daytonaudio.com/index.php/imm-6-idevice-calibrated-measurement-microphone.html). This is a fairly affordable calibrated microphone designed to work with iOS and Android devices via the three-ring headphone jack (TRRS).
 
@@ -96,7 +96,7 @@ On the iPad, I used a [custom app](NoiseRecorder) to capture audio in 2-hour seg
 
 ![The setup](docs/images/setup.jpg)
 
-#### Processing
+### Processing
 
 Once I had my audio files, I wrote [a bunch of Python scripts](analyze) to analyze them. I used a few great libraries for processing audio, namely [aubio](https://aubio.org) and [Pydub](http://pydub.com/). I also learned a lot from fiddling with [Librosa](http://librosa.github.io/), and [NumPy](https://docs.scipy.org/doc/numpy/reference/index.html) was super handy.
 
@@ -113,7 +113,7 @@ You can see more details and read the scripts [here](analyze).
 
 ## Results
 
-#### Caveats
+### Caveats
 
 - **Vehicle types.** I have no way of knowing precisely what type of vehicle is making what sound. This means I can't say with any certainty that a law is being broken (except when it exceeds the truck maximum, of course). A lot of times it's obvious that a given sound is a truck or motorcycle, but I've made no attempt to categorize them.
 - **Distance.** My microphone is roughly 50 feet from the center of the nearest lane of traffic. However, McGuinness Boulevard is 4 lanes wide with a median. So, I have no way of knowing the actual dBA of any vehicle at 50 ft., which is what the law mandates. I would need 4 properly positioned microphones, one per lane, to do this.
@@ -122,7 +122,7 @@ You can see more details and read the scripts [here](analyze).
 - **Wind.** The iMM-6 is not really intended for long-term outdoor recording. I picked up a fair amount of wind blowing into the microphone, which I manually tagged and filtered out of the supercut.
 - **Emergency vehicles.** I couldn't find any mention of emergency vehicles in the law. I've included them in the supercut, because they are typically accompanied by a lot of horn-honking.
 
-#### Findings
+### Findings
 
 You can check out the [graphs](analyze/graphs) and [audio supercut](https://soundcloud.com/tim-clem-404086192/sounds-of-mcguinness). Here are some numbers:
 
