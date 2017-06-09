@@ -124,7 +124,9 @@ You can see more details and read the scripts [here](analyze).
 
 ### Findings
 
-You can check out the [graphs](analyze/graphs) and [audio supercut](https://soundcloud.com/tim-clem-404086192/sounds-of-mcguinness). Here are some numbers:
+![May 16 - 21](docs/images/all-together-credited.png)
+
+You can check out all the [graphs](analyze/graphs) and [audio supercut](https://soundcloud.com/tim-clem-404086192/sounds-of-mcguinness). Here are some numbers:
 
 | Condition | Incidences in 6-day period* | Daily average | Average minutes between incidences |
 ------------------------------|-------|-------|----------------------
