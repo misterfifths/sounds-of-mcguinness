@@ -1,6 +1,6 @@
 # Sounds of McGuinness
 
-[![May 16 - 21](analyze/graphs/all-together.png)](analyze/graphs)
+[![May 16 - 21](docs/images/all-together-credited.png)](analyze/graphs)
 
 [More graphs](analyze/graphs).
 

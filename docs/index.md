@@ -23,7 +23,7 @@ In the graph below, the blue line is the average volume, and the orange is the p
 
 And, according to the World Health Organization's recommendations, it is *almost never* quiet enough for uninterrupted sleep.
 
-[![May 16 - May 21, 2017](images/all-together.png)](images/all-together.png)
+[![May 16 - May 21, 2017](images/all-together-credited.png)](images/all-together-credited.png)
 
 Here are some numbers:
 
