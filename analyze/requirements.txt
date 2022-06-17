@@ -1,6 +1,6 @@
 pydub==0.16.5
 aubio==0.4.9
 matplotlib==2.0.1
-numpy==1.12.1
+numpy==1.21.0
 PyAudio==0.2.11
 readchar==0.7
